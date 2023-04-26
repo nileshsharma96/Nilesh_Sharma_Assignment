@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="2" total="9" passed="7" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-04-27T00:25:45 IST" name="Assessment" finished-at="2023-04-27T00:27:23 IST" duration-ms="98300">
+    <groups>
+    </groups>
+    <test started-at="2023-04-27T00:25:45 IST" name="Assigment" finished-at="2023-04-27T00:27:23 IST" duration-ms="98300">
+      <class name="TestObjects.Assignment_2">
+        <test-method signature="OpenCareerPage()[pri:5, instance:TestObjects.Assignment_2@31dadd46]" started-at="2023-04-27T00:26:41 IST" name="OpenCareerPage" description="Open Career Path Page" finished-at="2023-04-27T00:26:43 IST" duration-ms="2142" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenCareerPage -->
+        <test-method signature="blogVerification()[pri:6, instance:TestObjects.Assignment_2@31dadd46]" started-at="2023-04-27T00:26:43 IST" name="blogVerification" description="Open page and validate all the cards in inspiration" finished-at="2023-04-27T00:27:05 IST" duration-ms="22388" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- blogVerification -->
+        <test-method signature="verifyRecentBlogs()[pri:7, instance:TestObjects.Assignment_2@31dadd46]" started-at="2023-04-27T00:27:05 IST" name="verifyRecentBlogs" description="To verify all the recent open blogs are showing on dashboard" finished-at="2023-04-27T00:27:23 IST" duration-ms="18188" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRecentBlogs -->
+      </class> <!-- TestObjects.Assignment_2 -->
+      <class name="TestObjects.Assignment_1">
+        <test-method is-config="true" signature="initialization()[pri:0, instance:TestObjects.Assignment_1@676cf48]" started-at="2023-04-27T00:25:44 IST" name="initialization" finished-at="2023-04-27T00:25:45 IST" duration-ms="1150" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization -->
+        <test-method is-config="true" signature="Initiate()[pri:0, instance:TestObjects.Assignment_1@676cf48]" started-at="2023-04-27T00:25:45 IST" name="Initiate" finished-at="2023-04-27T00:25:46 IST" duration-ms="509" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Initiate -->
+        <test-method signature="UserLogin()[pri:1, instance:TestObjects.Assignment_1@676cf48]" started-at="2023-04-27T00:25:46 IST" name="UserLogin" description="Verify if the user able to login" finished-at="2023-04-27T00:25:55 IST" duration-ms="9255" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserLogin -->
+        <test-method signature="openJobPage()[pri:2, instance:TestObjects.Assignment_1@676cf48]" started-at="2023-04-27T00:25:55 IST" name="openJobPage" description="Open the Job page to start the conversation" finished-at="2023-04-27T00:25:57 IST" duration-ms="2322" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openJobPage -->
+        <test-method signature="StartTheConvo()[pri:3, instance:TestObjects.Assignment_1@676cf48]" started-at="2023-04-27T00:25:57 IST" name="StartTheConvo" description="Send the Text Message" finished-at="2023-04-27T00:26:08 IST" duration-ms="10714" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StartTheConvo -->
+        <test-method signature="verifyMessage()[pri:4, instance:TestObjects.Assignment_1@676cf48]" started-at="2023-04-27T00:26:08 IST" name="verifyMessage" description="Verify the message sent to the Admin" finished-at="2023-04-27T00:26:41 IST" duration-ms="32744" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMessage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestObjects.Assignment_1@676cf48]" started-at="2023-04-27T00:27:24 IST" name="tearDown" finished-at="2023-04-27T00:27:24 IST" duration-ms="159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestObjects.Assignment_1 -->
+    </test> <!-- Assigment -->
+  </suite> <!-- Assessment -->
+</testng-results>
