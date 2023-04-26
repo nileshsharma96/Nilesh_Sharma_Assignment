@@ -45,7 +45,7 @@ public class Base {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
-		wait = new FluentWait<>(driver).withTimeout(Duration.ofSeconds(300)).pollingEvery(Duration.ofSeconds(1))
+		wait = new FluentWait<>(driver).withTimeout(Duration.ofSeconds(600)).pollingEvery(Duration.ofSeconds(1))
 				.ignoring(NoSuchElementException.class);
 	}
 

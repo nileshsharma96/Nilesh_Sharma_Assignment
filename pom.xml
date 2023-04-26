@@ -26,6 +26,8 @@
 	<name>Axis2 Quickstart Sample</name>
 	<properties>
 		<axis2.version>1.8.2</axis2.version>
+		<maven.compiler.source>1.6</maven.compiler.source>
+		<maven.compiler.target>1.6</maven.compiler.target>
 	</properties>
 	<dependencies>
 		<dependency>
