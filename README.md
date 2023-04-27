@@ -30,6 +30,10 @@ Report Shows:
 	a. Take clone of GitHub repository - "https://github.com/nileshsharma96/Nilesh_Sharma_Assignment.git"
 	b. User needs to go to the project directory of the project in Terminal and run command as - $ mvn test -Pexecute
 	
+12. Note:
+	a. If build doesn't invoke first time, please run the same command again
+	b. Fluent wait is given at login screen, so user can easily interact with the captcha which requires manual intervention
+	
 Selenium based web automation framework:
 
 Assignment 1
