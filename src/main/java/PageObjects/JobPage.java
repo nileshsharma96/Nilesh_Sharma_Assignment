@@ -38,6 +38,7 @@ public class JobPage {
 
 		driver.findElement(jobCard).click();
 		driver.findElement(convoContinue).click();
+		Thread.sleep(2000);
 		message = "Nilesh Sharma " + formattedDate + "\n" + "Total years of Experience - 2";
 		driver.findElement(messageBox).sendKeys(message);
 		Thread.sleep(2000);
