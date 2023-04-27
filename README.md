@@ -2,6 +2,10 @@
 
 TestNG Automation Framework Documentation:
 
+##prerequisite:
+a. Eclipse must be installed in your system
+b. TestNG should be installed, which is available in eclipse marketplace 
+
 1. Created new maven project eclipse and convert to testNG project
 
 2. Added all the maven dependancy in pom.xml file
