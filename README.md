@@ -5,6 +5,7 @@ TestNG Automation Framework Documentation:
 ##prerequisite:
 a. Eclipse must be installed in your system
 b. TestNG should be installed, which is available in eclipse marketplace 
+c. Chrome browser should be Version 112.0.5615.121 (Official Build) (64-bit)
 
 1. Created new maven project eclipse and convert to testNG project
 
