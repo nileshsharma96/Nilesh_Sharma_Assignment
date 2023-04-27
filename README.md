@@ -19,11 +19,17 @@ TestNG Automation Framework Documentation:
 8. Created two different classes a. PageObjects – In this class, all the elements path is defined and method b. TestObjects – In this class, methods are called using oops method by creating a new object and testNG annotations are defines with their respective attributes
 
 9. Final report generated in the project directory only inside the report folder- "Report.html"
+Report Shows:
+	a. Test case start time
+	b. Test case description
+	c. Screenshot of screen failed test cases
+	
+10. To verify the values, Used assertion method to validate
 
-10. To invoke script
-a. Take clone of GitHub repository - "https://github.com/nileshsharma96/Nilesh_Sharma_Assignment.git"
-b. User needs to go to the project directory of the project in Terminal and run command as - $ mvn test -Pexecute 
-
+11. To invoke script
+	a. Take clone of GitHub repository - "https://github.com/nileshsharma96/Nilesh_Sharma_Assignment.git"
+	b. User needs to go to the project directory of the project in Terminal and run command as - $ mvn test -Pexecute
+	
 Selenium based web automation framework:
 
 Assignment 1

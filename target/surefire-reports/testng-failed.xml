@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Assessment]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="Assignment.Assess.CustomListeners"/>
+  </listeners>
+  <test thread-count="5" name="Assigment(failed)" verbose="0">
+    <classes>
+      <class name="TestObjects.Assignment_1">
+        <methods>
+          <include name="verifyMessage"/>
+          <include name="initialization"/>
+          <include name="StartTheConvo"/>
+          <include name="openJobPage"/>
+          <include name="Initiate"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- TestObjects.Assignment_1 -->
+      <class name="TestObjects.Assignment_2">
+        <methods>
+          <include name="verifyRecentBlogs"/>
+          <include name="OpenCareerPage"/>
+          <include name="blogVerification"/>
+          <include name="initialization"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- TestObjects.Assignment_2 -->
+    </classes>
+  </test> <!-- Assigment(failed) -->
+</suite> <!-- Failed suite [Assessment] -->

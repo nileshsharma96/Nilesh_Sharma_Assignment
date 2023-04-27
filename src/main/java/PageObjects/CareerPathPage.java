@@ -27,6 +27,7 @@ public class CareerPathPage {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(recommendedElemet));
 		WebElement element = driver.findElement(inspirationHeading);
 		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
+		Thread.sleep(2000);
 
 //		append names of vlog in array
 
@@ -34,7 +35,6 @@ public class CareerPathPage {
 
 		for (int i = 1; i <= 9; i++) {
 
-			Thread.sleep(2000);
 			String Card = driver.findElement(cardName(i)).getText();
 			arr.add(Card);
 			driver.findElement(cardName(i)).click();

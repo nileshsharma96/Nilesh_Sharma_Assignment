@@ -38,14 +38,12 @@ public class Base {
 		options.setExperimentalOption("prefs", prefs);
 		options.addArguments("--remote-allow-origins=*");
 		options.addArguments("--disable-notifications");
-
-//		options.addArguments("headless");
 		driver = new ChromeDriver(options);
 
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
-		wait = new FluentWait<>(driver).withTimeout(Duration.ofSeconds(600)).pollingEvery(Duration.ofSeconds(1))
+		wait = new FluentWait<>(driver).withTimeout(Duration.ofSeconds(600)).pollingEvery(Duration.ofSeconds(5))
 				.ignoring(NoSuchElementException.class);
 	}
 
@@ -60,7 +58,6 @@ public class Base {
 		File source = ts.getScreenshotAs(OutputType.FILE);
 		String destinationFile = System.getProperty("user.dir") + "//reports//" + testCaseName + ".png";
 		FileUtils.copyFile(source, new File(destinationFile));
-//		return destinationFile;
 		byte[] imageBytes = IOUtils.toByteArray(new FileInputStream(destinationFile));
 		return Base64.getEncoder().encodeToString(imageBytes);
 	}

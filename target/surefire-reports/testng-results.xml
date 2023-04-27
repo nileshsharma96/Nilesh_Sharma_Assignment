@@ -2,50 +2,50 @@
 <testng-results ignored="2" total="9" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-27T01:15:32 IST" name="Assessment" finished-at="2023-04-27T01:17:07 IST" duration-ms="95250">
+  <suite started-at="2023-04-27T10:45:44 IST" name="Assessment" finished-at="2023-04-27T10:47:50 IST" duration-ms="126094">
     <groups>
     </groups>
-    <test started-at="2023-04-27T01:15:32 IST" name="Assigment" finished-at="2023-04-27T01:17:07 IST" duration-ms="95250">
+    <test started-at="2023-04-27T10:45:44 IST" name="Assigment" finished-at="2023-04-27T10:47:50 IST" duration-ms="126094">
       <class name="TestObjects.Assignment_2">
-        <test-method signature="OpenCareerPage()[pri:5, instance:TestObjects.Assignment_2@33ecda92]" started-at="2023-04-27T01:16:28 IST" name="OpenCareerPage" description="Open Career Path Page" finished-at="2023-04-27T01:16:30 IST" duration-ms="2236" status="PASS">
+        <test-method signature="OpenCareerPage()[pri:5, instance:TestObjects.Assignment_2@33ecda92]" started-at="2023-04-27T10:46:57 IST" name="OpenCareerPage" description="Open Career Path Page" finished-at="2023-04-27T10:46:59 IST" duration-ms="2270" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenCareerPage -->
-        <test-method signature="blogVerification()[pri:6, instance:TestObjects.Assignment_2@33ecda92]" started-at="2023-04-27T01:16:30 IST" name="blogVerification" description="Open page and validate all the cards in inspiration" finished-at="2023-04-27T01:16:51 IST" duration-ms="21024" status="PASS">
+        <test-method signature="blogVerification()[pri:6, instance:TestObjects.Assignment_2@33ecda92]" started-at="2023-04-27T10:46:59 IST" name="blogVerification" description="Open page and validate all the cards in inspiration" finished-at="2023-04-27T10:47:23 IST" duration-ms="23650" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- blogVerification -->
-        <test-method signature="verifyRecentBlogs()[pri:7, instance:TestObjects.Assignment_2@33ecda92]" started-at="2023-04-27T01:16:51 IST" name="verifyRecentBlogs" description="To verify all the recent open blogs are showing on dashboard" finished-at="2023-04-27T01:17:07 IST" duration-ms="15827" status="PASS">
+        <test-method signature="verifyRecentBlogs()[pri:7, instance:TestObjects.Assignment_2@33ecda92]" started-at="2023-04-27T10:47:23 IST" name="verifyRecentBlogs" description="To verify all the recent open blogs are showing on dashboard" finished-at="2023-04-27T10:47:50 IST" duration-ms="27252" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRecentBlogs -->
       </class> <!-- TestObjects.Assignment_2 -->
       <class name="TestObjects.Assignment_1">
-        <test-method is-config="true" signature="initialization()[pri:0, instance:TestObjects.Assignment_1@5c7933ad]" started-at="2023-04-27T01:15:30 IST" name="initialization" finished-at="2023-04-27T01:15:32 IST" duration-ms="1772" status="PASS">
+        <test-method is-config="true" signature="initialization()[pri:0, instance:TestObjects.Assignment_1@5c7933ad]" started-at="2023-04-27T10:45:42 IST" name="initialization" finished-at="2023-04-27T10:45:44 IST" duration-ms="2013" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialization -->
-        <test-method is-config="true" signature="Initiate()[pri:0, instance:TestObjects.Assignment_1@5c7933ad]" started-at="2023-04-27T01:15:32 IST" name="Initiate" finished-at="2023-04-27T01:15:33 IST" duration-ms="718" status="PASS">
+        <test-method is-config="true" signature="Initiate()[pri:0, instance:TestObjects.Assignment_1@5c7933ad]" started-at="2023-04-27T10:45:44 IST" name="Initiate" finished-at="2023-04-27T10:45:45 IST" duration-ms="883" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Initiate -->
-        <test-method signature="UserLogin()[pri:1, instance:TestObjects.Assignment_1@5c7933ad]" started-at="2023-04-27T01:15:33 IST" name="UserLogin" description="Verify if the user able to login" finished-at="2023-04-27T01:15:43 IST" duration-ms="10164" status="PASS">
+        <test-method signature="UserLogin()[pri:1, instance:TestObjects.Assignment_1@5c7933ad]" started-at="2023-04-27T10:45:45 IST" name="UserLogin" description="Verify if the user able to login" finished-at="2023-04-27T10:45:55 IST" duration-ms="10415" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UserLogin -->
-        <test-method signature="openJobPage()[pri:2, instance:TestObjects.Assignment_1@5c7933ad]" started-at="2023-04-27T01:15:43 IST" name="openJobPage" description="Open the Job page to start the conversation" finished-at="2023-04-27T01:15:45 IST" duration-ms="2565" status="PASS">
+        <test-method signature="openJobPage()[pri:2, instance:TestObjects.Assignment_1@5c7933ad]" started-at="2023-04-27T10:45:55 IST" name="openJobPage" description="Open the Job page to start the conversation" finished-at="2023-04-27T10:46:07 IST" duration-ms="11245" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openJobPage -->
-        <test-method signature="StartTheConvo()[pri:3, instance:TestObjects.Assignment_1@5c7933ad]" started-at="2023-04-27T01:15:45 IST" name="StartTheConvo" description="Send the Text Message" finished-at="2023-04-27T01:15:56 IST" duration-ms="10824" status="PASS">
+        <test-method signature="StartTheConvo()[pri:3, instance:TestObjects.Assignment_1@5c7933ad]" started-at="2023-04-27T10:46:07 IST" name="StartTheConvo" description="Send the Text Message" finished-at="2023-04-27T10:46:19 IST" duration-ms="12226" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- StartTheConvo -->
-        <test-method signature="verifyMessage()[pri:4, instance:TestObjects.Assignment_1@5c7933ad]" started-at="2023-04-27T01:15:56 IST" name="verifyMessage" description="Verify the message sent to the Admin" finished-at="2023-04-27T01:16:28 IST" duration-ms="31847" status="PASS">
+        <test-method signature="verifyMessage()[pri:4, instance:TestObjects.Assignment_1@5c7933ad]" started-at="2023-04-27T10:46:19 IST" name="verifyMessage" description="Verify the message sent to the Admin" finished-at="2023-04-27T10:46:57 IST" duration-ms="38097" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyMessage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestObjects.Assignment_1@5c7933ad]" started-at="2023-04-27T01:17:08 IST" name="tearDown" finished-at="2023-04-27T01:17:08 IST" duration-ms="206" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestObjects.Assignment_1@5c7933ad]" started-at="2023-04-27T10:47:51 IST" name="tearDown" finished-at="2023-04-27T10:47:51 IST" duration-ms="160" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
