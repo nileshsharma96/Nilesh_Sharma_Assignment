@@ -6,7 +6,7 @@ TestNG Automation Framework Documentation:
 
 2. Added all the maven dependancy in pom.xml file
 
-3. Created Base file to initialise the browser and created new suite methods in testng.xml file
+3. Created Base file to initialise the browser and added classes in testng.xml file
 
 4. To generate html report, created class for extent report method
 
