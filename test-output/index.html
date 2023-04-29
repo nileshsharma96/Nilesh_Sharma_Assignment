@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Assessment" class="navigator-link">
-              <span class="suite-name border-passed">Assessment</span>
+              <span class="suite-name border-failed">Assessment</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,7 +93,31 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">7 methods,   7 passed</span>
+                    <span class="method-stats">7 methods, 3 failed,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Assessment" class="hide-methods failed suite-Assessment"> (hide)</a> <!-- hide-methods failed suite-Assessment -->
+                      <a href="#" panel-name="suite-Assessment" class="show-methods failed suite-Assessment"> (show)</a> <!-- show-methods failed suite-Assessment -->
+                    </span>
+                    <div class="method-list-content failed suite-Assessment">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Assessment" title="TestObjects.Assignment_1" class="method navigator-link" hash-for-method="StartTheConvo">StartTheConvo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Assessment" title="TestObjects.Assignment_1" class="method navigator-link" hash-for-method="openJobPage">openJobPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Assessment" title="TestObjects.Assignment_1" class="method navigator-link" hash-for-method="verifyMessage">verifyMessage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Assessment -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -109,27 +133,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Assessment" title="TestObjects.Assignment_1" class="method navigator-link" hash-for-method="StartTheConvo">StartTheConvo</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Assessment" title="TestObjects.Assignment_1" class="method navigator-link" hash-for-method="UserLogin">UserLogin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Assessment" title="TestObjects.Assignment_2" class="method navigator-link" hash-for-method="blogVerification">blogVerification</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Assessment" title="TestObjects.Assignment_1" class="method navigator-link" hash-for-method="openJobPage">openJobPage</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Assessment" title="TestObjects.Assignment_1" class="method navigator-link" hash-for-method="verifyMessage">verifyMessage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -149,6 +158,116 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Assessment" class="panel Assessment">
+          <div class="suite-Assessment-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">TestObjects.Assignment_1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="StartTheConvo">
+                  </a> <!-- StartTheConvo -->
+                  <span class="method-name">StartTheConvo</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//div[@class=&apos;ant-card-body&apos;])[1]&quot;}
+  (Session info: chrome=112.0.5615.121)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.2&apos;, revision: &apos;826dbfc730&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.19.0-40-generic&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6d87fc66f4fe89f666501762201c591c, findElement {using=xpath, value=(//div[@class=&apos;ant-card-body&apos;])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.121, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: /tmp/.com.google.Chrome.rM64yl}, goog:chromeOptions: {debuggerAddress: localhost:44623}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:44623/devtoo..., se:cdpVersion: 112.0.5615.121, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6d87fc66f4fe89f666501762201c591c
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at PageObjects.JobPage.startConversation(JobPage.java:39)
+	at TestObjects.Assignment_1.StartTheConvo(Assignment_1.java:48)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Send the Text Message)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="openJobPage">
+                  </a> <!-- openJobPage -->
+                  <span class="method-name">openJobPage</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//p[normalize-space()=&apos;Jobs&apos;]&quot;}
+  (Session info: chrome=112.0.5615.121)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.2&apos;, revision: &apos;826dbfc730&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.19.0-40-generic&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6d87fc66f4fe89f666501762201c591c, findElement {using=xpath, value=//p[normalize-space()=&apos;Jobs&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.121, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: /tmp/.com.google.Chrome.rM64yl}, goog:chromeOptions: {debuggerAddress: localhost:44623}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:44623/devtoo..., se:cdpVersion: 112.0.5615.121, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6d87fc66f4fe89f666501762201c591c
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at PageObjects.DashboardPage.careerJob(DashboardPage.java:45)
+	at TestObjects.Assignment_1.openJobPage(Assignment_1.java:40)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Open the Job page to start the conversation)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMessage">
+                  </a> <!-- verifyMessage -->
+                  <span class="method-name">verifyMessage</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@class=&apos;ant-btn btn-link&apos;]&quot;}
+  (Session info: chrome=112.0.5615.121)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.2&apos;, revision: &apos;826dbfc730&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.19.0-40-generic&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6d87fc66f4fe89f666501762201c591c, findElement {using=xpath, value=//button[@class=&apos;ant-btn btn-link&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.121, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: /tmp/.com.google.Chrome.rM64yl}, goog:chromeOptions: {debuggerAddress: localhost:44623}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:44623/devtoo..., se:cdpVersion: 112.0.5615.121, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6d87fc66f4fe89f666501762201c591c
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at PageObjects.JobPage.openProfile(JobPage.java:51)
+	at TestObjects.Assignment_1.verifyMessage(Assignment_1.java:55)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify the message sent to the Admin)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Assessment-class-failed -->
           <div class="suite-Assessment-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -192,15 +311,6 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="StartTheConvo">
-                  </a> <!-- StartTheConvo -->
-                  <span class="method-name">StartTheConvo</span>
-                  <em>
-(Send the Text Message)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="UserLogin">
                   </a> <!-- UserLogin -->
                   <span class="method-name">UserLogin</span>
@@ -208,30 +318,12 @@
 (Verify if the user able to login)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="openJobPage">
-                  </a> <!-- openJobPage -->
-                  <span class="method-name">openJobPage</span>
-                  <em>
-(Open the Job page to start the conversation)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyMessage">
-                  </a> <!-- verifyMessage -->
-                  <span class="method-name">verifyMessage</span>
-                  <em>
-(Verify the message sent to the Admin)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Assessment-class-passed -->
         </div> <!-- panel Assessment -->
         <div panel-name="test-xml-Assessment" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/home/nileshsharma/Documents/LendFoundryLOS/Nilesh Sharma/Assess/testng.xml</span>
+            <span class="header-content">/home/nileshsharma/Documents/LendFoundryLOS/Nilesh_Sharma/Assess/testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -286,33 +378,33 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(7);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyMessage')
+data.setCell(0, 1, 'openJobPage')
 data.setCell(0, 2, 'TestObjects.Assignment_1')
-data.setCell(0, 3, 32744);
+data.setCell(0, 3, 27204);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'blogVerification')
 data.setCell(1, 2, 'TestObjects.Assignment_2')
-data.setCell(1, 3, 22388);
+data.setCell(1, 3, 20606);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'verifyRecentBlogs')
 data.setCell(2, 2, 'TestObjects.Assignment_2')
-data.setCell(2, 3, 18188);
+data.setCell(2, 3, 20299);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'StartTheConvo')
+data.setCell(3, 1, 'verifyMessage')
 data.setCell(3, 2, 'TestObjects.Assignment_1')
-data.setCell(3, 3, 10714);
+data.setCell(3, 3, 10036);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'UserLogin')
 data.setCell(4, 2, 'TestObjects.Assignment_1')
-data.setCell(4, 3, 9255);
+data.setCell(4, 3, 10035);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'openJobPage')
+data.setCell(5, 1, 'StartTheConvo')
 data.setCell(5, 2, 'TestObjects.Assignment_1')
-data.setCell(5, 3, 2322);
+data.setCell(5, 3, 10035);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'OpenCareerPage')
 data.setCell(6, 2, 'TestObjects.Assignment_2')
-data.setCell(6, 3, 2142);
+data.setCell(6, 3, 6660);
 window.suiteTableData['Assessment']= { tableData: data, tableDiv: 'times-div-Assessment'}
 return data;
 }
@@ -359,45 +451,51 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">Initiate</span>
-                <span class="method-start">1154 ms</span>
+                <span class="method-start">1222 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">UserLogin</span>
-                <span class="method-start">1679 ms</span>
+                <span class="method-start">1656 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">openJobPage</span>
-                <span class="method-start">10938 ms</span>
+                <span class="method-start">11695 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">StartTheConvo</span>
-                <span class="method-start">13264 ms</span>
+                <span class="method-start">39240 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">verifyMessage</span>
-                <span class="method-start">23980 ms</span>
+                <span class="method-start">49578 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestObjects.Assignment_2</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">OpenCareerPage</span>
-                <span class="method-start">56728 ms</span>
+                <span class="method-start">59975 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">blogVerification</span>
-                <span class="method-start">58872 ms</span>
+                <span class="method-start">66637 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyRecentBlogs</span>
-                <span class="method-start">81262 ms</span>
+                <span class="method-start">87244 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestObjects.Assignment_1</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">99692 ms</span>
+                <span class="method-start">107833 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

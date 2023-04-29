@@ -6,13 +6,16 @@
   </listeners>
   <test thread-count="5" name="Assigment(failed)">
     <classes>
-      <class name="TestObjects.Assignment_2">
+      <class name="TestObjects.Assignment_1">
         <methods>
-          <include name="verifyRecentBlogs"/>
+          <include name="verifyMessage"/>
           <include name="initialization"/>
+          <include name="StartTheConvo"/>
+          <include name="openJobPage"/>
+          <include name="Initiate"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- TestObjects.Assignment_2 -->
+      </class> <!-- TestObjects.Assignment_1 -->
     </classes>
   </test> <!-- Assigment(failed) -->
 </suite> <!-- Failed suite [Assessment] -->

@@ -27,6 +27,9 @@ public class DashboardPage {
 
 	public void careerPath(WebDriver driver, Wait<WebDriver> wait) throws InterruptedException {
 
+		driver.findElement(homeButton).click();
+		Thread.sleep(2000);
+		driver.navigate().refresh();
 		wait.until(ExpectedConditions.visibilityOfElementLocated(careerButton));
 		driver.findElement(careerButton).click();
 		Thread.sleep(2000);
@@ -36,6 +39,7 @@ public class DashboardPage {
 
 	public void careerJob(WebDriver driver, Wait<WebDriver> wait) throws InterruptedException {
 
+		Thread.sleep(4000);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(careerButton));
 		driver.findElement(careerButton).click();
 		Thread.sleep(2000);
